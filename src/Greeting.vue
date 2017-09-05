@@ -19,7 +19,7 @@
 
 <template>
   <div>
-    <h1 @click="newClick">{{ msg }}</h1>
+    <h1 @click="newClick()">{{ msg }}</h1>
     <h3>El mensaje tiene {{ msg.length }} caracteres</h3>
   </div>
 </template>
