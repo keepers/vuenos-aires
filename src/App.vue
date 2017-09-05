@@ -1,22 +1,30 @@
 <script>
+  import store from './store'
   import logo from './Logo.vue'
   import greeting from './Greeting.vue'
 
   export default {
     name: 'app',
 
+    store,
+
     components: { logo, greeting },
 
-    data() {
-      return {
-        msg: '👋 Vuenos Aires',
-        count: 0
+    computed: {
+      msg() {
+        return this.$store.state.message
+      },
+      count() {
+        return this.$store.state.counter
+      },
+      completeMessage() {
+        return this.$store.getters.completeMessage
       }
     },
 
     methods: {
       addCount() {
-        this.count++
+        this.$store.commit('increment')
       }
     }
   }
@@ -25,8 +33,10 @@
 <template>
   <div id="app">
     <logo></logo>
-    <greeting :msg="msg" @clicked="addCount()"></greeting>
+    <greeting :msg="msg" @clicked="addCount"></greeting>
     <p v-if="count">Clickeaste {{ count }} veces</p>
+
+    <p>Complete Message from computed property: {{ completeMessage }}</p>
   </div>
 </template>
 

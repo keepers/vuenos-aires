@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "ferrocarriloeste": "^1.0.0",
-    "vue": "^2.3.3"
+    "vue": "^2.3.3",
+    "vuex": "^2.4.0"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
