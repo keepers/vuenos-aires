@@ -1,7 +1,7 @@
 # Demo para [Vuenos Aires](https://www.meetup.com/vuenos-aires)
 
-- 📍 [Evento](https://www.meetup.com/preview/vuenos-aires/events/242994257)
-- 📹 [Video](https://youtu.be/AR2u7Z_o3WM)
+### 📍 [Evento](https://www.meetup.com/preview/vuenos-aires/events/242994257)
+### 📹 [Video](https://youtu.be/AR2u7Z_o3WM)
 
 ## Charlas
 
